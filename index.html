@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Open Systems Research Institute (OSRI)</title>
+  <meta name="description" content="Independent, academic-leaning research initiative exploring open systems, OS design, and secure computing." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="brand">
+        <div class="mark">OSRI</div>
+        <div class="name">Open Systems Research Institute</div>
+      </div>
+      <nav class="nav">
+        <a href="#research">Research</a>
+        <a href="#writing">Writing</a>
+        <a href="#people">People</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Open research on computing systems.</h1>
+        <p>
+          OSRI is an independent, academic-leaning research initiative focused on open systems,
+          operating system design, secure computing, and experimental software infrastructure.
+        </p>
+        <div class="cta">
+          <a class="button" href="#writing">Read notes</a>
+          <a class="button outline" href="https://github.com/open-systems-research-institute" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section">
+      <div class="container">
+        <h2>Research Areas</h2>
+        <ul class="list">
+          <li>Operating system design & kernels</li>
+          <li>Secure computing and capability-based systems</li>
+          <li>Systems architecture and abstractions</li>
+          <li>Open infrastructure and tooling</li>
+          <li>Experimental and educational systems research</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="writing" class="section alt">
+      <div class="container">
+        <h2>Writing & Notes</h2>
+        <p>
+          OSRI publishes research notes, reading lists, and essays. Current materials live on GitHub.
+        </p>
+        <ul class="list">
+          <li><a href="https://github.com/open-systems-research-institute" target="_blank" rel="noreferrer">Research Notes (GitHub)</a></li>
+          <li><a href="https://github.com/open-systems-research-institute" target="_blank" rel="noreferrer">Reading List (GitHub)</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="people" class="section">
+      <div class="container">
+        <h2>People</h2>
+        <p><strong>Founder:</strong> Jude</p>
+        <p><strong>Co-founder:</strong> (coming soon)</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          For academic discussion or collaboration, open an issue on GitHub:
+          <a href="https://github.com/open-systems-research-institute" target="_blank" rel="noreferrer">open-systems-research-institute</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© <span id="year"></span> Open Systems Research Institute (OSRI).</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
