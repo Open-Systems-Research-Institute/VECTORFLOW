@@ -6,6 +6,11 @@
   --line:#223055;
   --accent:#6ee7ff;
 }
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
 
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
