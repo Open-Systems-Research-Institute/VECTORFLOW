@@ -1,108 +1,185 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Open Systems Research Institute (OSRI)</title>
-  <meta name="description" content="Independent, academic-leaning research initiative exploring open systems, OS design, and secure computing." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>VectorFlow – Autonomous AI Operations Platform</title>
+  <meta name="description" content="VectorFlow is an autonomous AI operations and intelligence platform empowering technical teams to automate research, monitoring, analysis, and digital workflows using intelligent agent systems.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      margin: 0;
+      background: #11161c;
+      color: #efeef9;
+    }
+    header {
+      background: #181e25;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #65f6e6;
+      letter-spacing: -1px;
+    }
+    nav a {
+      color: #efeef9;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: #65f6e6; }
+    .hero {
+      padding: 5rem 2rem 2rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: #65f6e6;
+      margin-bottom: 1rem;
+    }
+    .hero h2 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #b5bede;
+      margin-bottom: 2rem;
+      letter-spacing: 0.3px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2.5rem auto;
+      color: #e1e4ed;
+      line-height: 1.8;
+    }
+    .cta {
+      display: inline-block;
+      background: #65f6e6;
+      color: #181e25;
+      font-weight: 700;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      font-size: 1.05rem;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(80,250,214,0.08);
+      transition: background 0.2s;
+    }
+    .cta:hover { background: #2de1a2; }
+    section {
+      padding: 4rem 2rem 2rem 2rem;
+      max-width: 950px;
+      margin: 0 auto;
+    }
+    section h3 {
+      color: #65f6e6;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      font-size: 1.7rem;
+    }
+    section ul {
+      padding-left: 1.3rem;
+      line-height: 1.7;
+      margin-bottom: 1.7rem;
+    }
+    section p {
+      color: #e1e4ed;
+      max-width: 820px;
+      font-size: 1.07rem;
+    }
+    .philosophy {
+      background: #181e25;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-top: 2rem;
+      box-shadow: 0 0 30px rgba(80,250,214,0.06);
+    }
+
+    .footer {
+      margin: 2rem 0 0 0;
+      padding: 2rem 0;
+      background: #181e25;
+      text-align: center;
+      color: #adacec;
+      font-size: 0.98rem;
+    }
+
+    @media (max-width: 600px) {
+      header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .hero, section { padding: 2.4rem 0.7rem 1.5rem 0.7rem; }
+      .hero h1 { font-size: 2.1rem; }
+      .hero h2 { font-size: 1rem; }
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-    <div class="brand">
-
-  <img src="logo.png" alt="Open Systems Research Institute logo" class="logo" />
-
-  <div class="name">Open Systems Research Institute</div>
-</div>
-
-      <nav class="nav">
-        <a href="#research">Research</a>
-        <a href="#writing">Writing</a>
-        <a href="#people">People</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+  <header>
+    <div class="logo">VectorFlow</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#product">Product</a>
+      <a href="#philosophy">Philosophy</a>
+      <!-- More links as you add docs/demo/etc -->
+    </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Open research on computing systems.</h1>
-        <p>
-          OSRI is an independent, academic-leaning research initiative focused on open systems,
-          operating system design, secure computing, and experimental software infrastructure.
-        </p>
-        <div class="cta">
-          <a class="button" href="#writing">Read notes</a>
-          <a class="button outline" href="https://github.com/open-systems-research-institute" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
-      </div>
+    <div class="hero">
+      <h1>Autonomous AI Operations Platform</h1>
+      <h2>Infrastructure for agents, automation, and real-time technical intelligence</h2>
+      <p>
+        VectorFlow is an autonomous AI operations and intelligence platform designed to help technical teams automate research, monitoring, analysis, and digital workflows using intelligent agent systems.
+        <br><br>
+        Instead of manually searching, analyzing, and tracking endless data sources, VectorFlow provides a continuously running intelligence and execution platform—freeing technical teams to focus on higher-value work.
+      </p>
+      <a class="cta" href="#product">Learn More</a>
+    </div>
+
+    <section id="about">
+      <h3>About VectorFlow</h3>
+      <p>
+        The digital world is saturated with repetitive operations, scattered tools, and research overload. 
+        Maintaining awareness of technical changes, orchestrating workflows, and surfacing actionable insights is a bottleneck for every ambitious organization.
+        <br><br>
+        VectorFlow is built from the ground up as an AI agent infrastructure platform, with a core philosophy of practical, autonomous operations—not hype. 
+      </p>
     </section>
 
-    <section id="research" class="section">
-      <div class="container">
-        <h2>Research Areas</h2>
-        <ul class="list">
-          <li>Operating system design & kernels</li>
-          <li>Secure computing and capability-based systems</li>
-          <li>Systems architecture and abstractions</li>
-          <li>Open infrastructure and tooling</li>
-          <li>Experimental and educational systems research</li>
-        </ul>
-      </div>
+    <section id="product">
+      <h3>Phase 1 Product: Core Agent Platform</h3>
+      <ul>
+        <li><strong>Authentication</strong> – Secure user and team access</li>
+        <li><strong>Agent framework</strong> – Foundation for deploying and managing autonomous agents</li>
+        <li><strong>Task execution system</strong> – Engine to process and automate digital tasks</li>
+        <li><strong>Memory system</strong> – Persistent history and long-term knowledge for agents</li>
+        <li><strong>Vector database</strong> – Store and rapidly retrieve embeddings and contextual info</li>
+        <li><strong>Workflow engine</strong> – Orchestrate and automate interconnected operations</li>
+        <li><strong>Monitoring pipelines</strong> – Continuous tracking of data streams, APIs, repositories</li>
+      </ul>
+      <p>
+        <em>VectorFlow’s foundation is designed for stability, scale, and robust automation. The platform provides technical teams with the core infrastructure needed to build, run, and extend intelligent autonomous workflows with confidence.</em>
+      </p>
     </section>
 
-    <section id="writing" class="section alt">
-      <div class="container">
-        <h2>Writing & Notes</h2>
-        <p>
-          OSRI publishes research notes, reading lists, and essays. Current materials live on GitHub.
-        </p>
-     <ul class="list">
-  <li>
-    <a href="https://github.com/Open-Systems-Research-Institute/OSRI/tree/main/notes" target="_blank" rel="noreferrer">
-      Research Notes (GitHub)
-    </a>
-  </li>
-  <li>
-    <a href="https://github.com/Open-Systems-Research-Institute/OSRI/tree/main/reading" target="_blank" rel="noreferrer">
-      Reading List (GitHub)
-    </a>
-  </li>
-</ul>
-
-      </div>
-    </section>
-
-    <section id="people" class="section">
-      <div class="container">
-        <h2>People</h2>
-        <p><strong>Founder:</strong> Jude</p>
-        <p><strong>Co-founder:</strong> (coming soon)</p>
-      </div>
-    </section>
-
-    <section id="contact" class="section alt">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>
-          For academic discussion or collaboration, open an issue on GitHub:
-          <a href="https://github.com/open-systems-research-institute" target="_blank" rel="noreferrer">open-systems-research-institute</a>
-        </p>
-      </div>
+    <section id="philosophy" class="philosophy">
+      <h3>Philosophy: Infrastructure Over Hype</h3>
+      <p>
+        VectorFlow is not an “AI agent that does everything” or overhyped AGI experiment.
+        <br><br>
+        <strong>We build autonomous <u>operational</u> systems:</strong>  
+        not chatbots, not employee replacements, but reliable, always-on intelligence infrastructure that delivers actionable automation and research at scale.
+        <br><br>
+        Trust, reliability, and practical value guide every decision. Our mission is to empower modern engineering and research teams with true operational leverage—not more noise.
+      </p>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <small>© <span id="year"></span> Open Systems Research Institute (OSRI).</small>
-    </div>
+    &copy; 2026 VectorFlow. Crafted for teams building the future with autonomous intelligence.  
   </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
