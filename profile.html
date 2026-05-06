@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile | VectorFlow</title>
+  <meta name="description" content="Create your VectorFlow profile and select a subscription plan.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body { background: #11161c; color: #efeef9; font-family: 'Inter', Arial, sans-serif; padding: 0; margin: 0; }
+    .container { max-width: 510px; margin: 4rem auto 0 auto; background: #181e25; border-radius: 10px; box-shadow: 0 4px 24px #0003; padding: 2.5rem; }
+    h1 { text-align: center; color: #65f6e6; }
+    label { display: block; margin-top: 1.5rem; color: #b5bede; }
+    input, select { width: 100%; margin-top: 0.4rem; margin-bottom: 1.6rem; padding: 0.8rem; border-radius: 5px; border: none; background: #222737; color: #efeef9; font-size: 1.03rem; }
+    button { width: 100%; background: #65f6e6; color: #181e25; font-weight: 600; font-size: 1.08rem; border-radius: 5px; border: none; padding: 1rem; cursor: pointer; margin-top: 0.8rem; }
+    button:hover { background: #2de1a2; }
+    .note { color: #adacec; text-align: center; font-size: 0.98rem; margin: 1.1rem 0 0 0; }
+    .confirmation { margin: 1.5rem 0 0 0; color: #56e299; text-align: center; font-size: 1.11rem; }
+    a { color: #65f6e6; text-decoration: none; font-weight: 500; }
+    a:hover { text-decoration: underline; }
+  </style>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('confirmation').style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Profile Setup</h1>
+    <form onsubmit="handleSubmit(event)">
+      <label for="name">Full Name</label>
+      <input id="name" name="name" required placeholder="Your full name" />
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required placeholder="you@email.com" />
+      <label for="subscription">Subscription Plan</label>
+      <select id="subscription" name="subscription" required>
+        <option value="free">Free</option>
+        <option value="pro">Pro ($20–50/mo)</option>
+        <option value="team">Team/Enterprise ($199–999/mo)</option>
+      </select>
+      <button type="submit">Save Profile</button>
+      <div id="confirmation" class="confirmation" style="display:none">Profile saved! Subscription plan selected.</div>
+    </form>
+    <div class="note">Return to <a href="index.html">homepage</a></div>
+  </div>
+</body>
+</html>
