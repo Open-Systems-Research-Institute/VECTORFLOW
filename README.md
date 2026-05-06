@@ -25,6 +25,22 @@ Our foundational version focuses on building and exposing the essential infrastr
 - **Workflow engine**: Automate interconnected workflows
 - **Monitoring pipelines**: Continuous tracking of APIs, data streams, repositories
 
+## Phase 2: Specialized Agents
+
+### GitHub Monitoring Agent
+
+- **Automated Repository Intelligence:** Scan and analyze repos for all changes, issues, releases, dependencies, and security events.
+- **Real-time Notifications:** Instant, actionable alerts for releases, pull requests, and important signals.
+- **Workflow Automation:** Technical summaries, change logs, and onboarding docs—delivered automatically.
+
+## Monetization
+
+VectorFlow is available in these tiers:
+
+- **Free:** Core monitoring, limited agent runs, basic notification services.
+- **Pro ($20–50/month):** Advanced monitoring, unlimited workflows, increased memory, custom triggers.
+- **Team/Enterprise ($199–999/month):** Collaborative agent infrastructure, team workspaces, API/integrations, advanced analytics, and enterprise support.
+
 ## Philosophy
 
 VectorFlow is not a hype-driven AGI project, nor "AI agents that do everything." We build autonomous _operational_ systems: always-on, reliable, and focused on practical, enterprise-grade intelligence infrastructure. Our mission is to create true operational leverage for modern teams—reducing manual coordination and accelerating informed action.
@@ -32,7 +48,7 @@ VectorFlow is not a hype-driven AGI project, nor "AI agents that do everything."
 ## Roadmap
 
 1. Build and stabilize core agent platform (Phase 1)
-2. Add specialized research and monitoring agents
+2. Add specialized research and monitoring agents (Phase 2)
 3. Enable multi-agent workflow orchestration and automation
 4. Expand with team/enterprise features: APIs, RBAC, analytics, integrations
 
